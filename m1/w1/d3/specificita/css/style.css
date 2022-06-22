@@ -1,0 +1,35 @@
+#main-header .list-item a{ /*peso 111*/
+    text-decoration: none;
+    color: #000;
+}
+
+#main-header a{ /*peso 101*/
+    text-decoration: none;
+    color: red;
+}
+
+a{ /*peso 1*/ 
+    text-decoration: none;
+    color: blue;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color:aqua;
+}
+
+/*altri modi per selezionare
+selettore: div .sfondo-blue (sfondo blue figli di div)
+div.sfondo-blue (div che ha anche la classe sfondo-blue)
+*/
+
+div.sfondo-blue{ /*funziona solo se la classe è applicata ad un div*/
+    background-color: red;
+}
+
+div.sfondo-blue.testo-grassetto{/*funziona se entrambe le classi sono applicate ad un div*/
+    font-weight: bold;
+}
+
+.sfondo-blue, .testo-grassetto{/*tutti gli elementi che hanno sfondo-blue e tutti gli elementi che hanno classe testo-grassetto*/
+    height: 50px;
+}

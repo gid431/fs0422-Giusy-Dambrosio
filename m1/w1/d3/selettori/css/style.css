@@ -1,0 +1,33 @@
+div{ /*selezione attraverso il tag */
+    color: red;
+}
+
+#div-blue{ /*selezione attraverso l'id*/
+    color: blue;
+}
+
+.testo-verde{ /*selezione attraverso la classe*/
+    color: green;
+}
+
+span{
+    font-style: italic;
+}
+
+/*
+div span { tutti gli span che stanno dentro un div
+    font-weight: bold;
+} */
+
+/*
+#area-grassetto span { tutti i figli span all'interno di area-grassetto
+    font-weight: 600;
+}*/
+
+#area-grassetto > span { /*tutti i figli di primo grado span all'interno di area-grassetto*/
+    font-weight: 600;
+}
+
+#area-grassetto div span{ /*tutti gli span figli di div figli di area.grassetto */
+    background-color: blue;
+}

@@ -1,0 +1,43 @@
+/*tipografia*/
+@font-face{
+    font-family: MioFont; /*nome che voglio dare al nuovo font*/
+    src: url("../webfont/ufonts.com_tw-cen-mt.ttf") format("truetype");
+}
+
+html{
+    font-size: 20px;
+}
+
+h1{
+    /*font-size: 50px;*/
+    /*font-size: 50%;*/
+    font-size: 1rem;
+}
+
+h2{
+    font-size: 2rem; /*due volte la dimensione del tag html, il root la radice*/
+}
+
+h2 span{
+    font-size: 2em; /*due volte la dimensione del genitore (h2)*/
+}
+
+h3{
+    font-family: MioFont;
+}
+
+h4{
+    /*font-variant: small-caps; tutto in maiuscolo oppure text trasform uppercase o lowercase*/
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h5{
+    text-indent: 30px;
+}
+
+p{
+    line-height: 2rem; /*interlinea, spazio sopra e sotto il testo*/
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 3px #000, -3px -30px 3px red; /*asse x, asse y, quanto è ampia l'ombra, colore dell'ombra, si possono applicare più ombre*/
+}

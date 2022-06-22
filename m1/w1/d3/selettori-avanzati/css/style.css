@@ -1,0 +1,43 @@
+blockquote + p{
+    color:red;
+} /*tutte le p subito dopo un adiacente (senza interruzioni) blockquote*/
+
+span ~ b{
+    color:blue;
+}
+
+button{
+    background-color: red;
+    transition: background-color 1s; /*se c'è un cambianto all'hover questo è graduale, a che proprietà ti riferisci e quanti secondi ci mette*/
+}
+
+button:hover{
+    background-color: yellow;
+    border: none;
+}
+
+ul li:last-child{ /*ultimo figlio*/
+    color: purple;
+}
+
+ul li:not(.escluso){ /*tranne quello con la classe escluso*/
+    text-decoration: overline;
+}
+
+ul li:nth-of-type(3){/*prendi il terzo li*/
+    background-color: red;
+}
+
+table tr:nth-of-type(even){ /*tutti i tr di numero pari*/
+    background-color: #ccc;
+}
+
+/*pseudoelementi*/
+
+table tr td::after{ /**/
+    content: "@";
+}
+
+table tr td::before{ /**/
+    content: "@";
+}
