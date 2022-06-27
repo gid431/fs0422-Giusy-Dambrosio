@@ -1,0 +1,7 @@
+article{
+    width: 450px;;
+}
+
+article:nth-of-type(1){
+    background-image: url(../img/pc450.png);
+}
